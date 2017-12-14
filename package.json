@@ -1,0 +1,39 @@
+{
+  "name": "bengali",
+  "version": "1.0.0",
+  "description": "Bengalí website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ scss/",
+    "watch:scss": "onchange scss/*.scss -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts && copyfiles fonts/* dist",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "imagemin": "imagemin img/* -o dist/img ",
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
+  },
+  "author": "Emmanuel Villalobos",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "lite-server": "^2.3.0",
+    "parallelshell": "^3.0.2"
+  },
+  "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "htmlmin": "0.0.7",
+    "imagemin": "^5.3.1",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.2.1",
+    "rimraf": "^2.6.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  }
+}
