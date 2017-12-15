@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: Titillium Semibold;
+    src: url('../fonts/TitilliumWeb-SemiBold.ttf')
+}
+
+@font-face {
     font-family: Titillium Bold;
     src: url('../fonts/TitilliumWeb-Bold.ttf')
 }
@@ -31,14 +36,22 @@ html, body, * {
     color: white;
 }
 
+.scrolled {
+    background: #403F48;
+    padding: 0px;
+}
+
 ul.navbar-nav{
     li.nav-item {
-        &.active .nav-link {
-            color: white;
-            font-weight: 600;
-        }
-        .nav-link {
-            color: white;
+        margin-right: 30px;
+        a.nav-link {
+            font-family: Titillium Semibold;
+            color: rgba(255,255,255,.8);
+            text-transform: uppercase;
+            &.active, &:hover {
+                color: rgba(255,255,255,.8);
+                border-bottom: 3px solid white;
+            }
         }
     }
 }

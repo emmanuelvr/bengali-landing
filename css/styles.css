@@ -3,6 +3,10 @@
   src: url("../fonts/TitilliumWeb-Regular.ttf"); }
 
 @font-face {
+  font-family: Titillium Semibold;
+  src: url("../fonts/TitilliumWeb-SemiBold.ttf"); }
+
+@font-face {
   font-family: Titillium Bold;
   src: url("../fonts/TitilliumWeb-Bold.ttf"); }
 
@@ -20,12 +24,19 @@ html, body, * {
   background-size: cover;
   color: white; }
 
-ul.navbar-nav li.nav-item.active .nav-link {
-  color: white;
-  font-weight: 600; }
+.scrolled {
+  background: #403F48;
+  padding: 0px; }
 
-ul.navbar-nav li.nav-item .nav-link {
-  color: white; }
+ul.navbar-nav li.nav-item {
+  margin-right: 30px; }
+  ul.navbar-nav li.nav-item a.nav-link {
+    font-family: Titillium Semibold;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase; }
+    ul.navbar-nav li.nav-item a.nav-link.active, ul.navbar-nav li.nav-item a.nav-link:hover {
+      color: rgba(255, 255, 255, 0.8);
+      border-bottom: 3px solid white; }
 
 .100vh {
   height: 100vh; }
