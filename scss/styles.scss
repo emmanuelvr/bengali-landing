@@ -1,0 +1,173 @@
+@mixin fill-background($url) {
+    background:url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+@font-face {
+    font-family: Titillium;
+    src: url('../fonts/TitilliumWeb-Regular.ttf')
+}
+
+@font-face {
+    font-family: Titillium Bold;
+    src: url('../fonts/TitilliumWeb-Bold.ttf')
+}
+
+html, body, * {
+    font-family: Titillium;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    justify-content: center;
+    text-align:center;
+    background: url('../img/slider/image1.png');
+    background-size: cover;
+    color: white;
+}
+
+ul.navbar-nav{
+    li.nav-item {
+        &.active .nav-link {
+            color: white;
+            font-weight: 600;
+        }
+        .nav-link {
+            color: white;
+        }
+    }
+}
+
+.100vh {
+    height: 100vh;
+}
+
+.carousel {
+    // height: 100vh;
+}
+
+.full-section {
+    background: url('../img/backgrounds/light-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.rounder {
+    border-radius: 15px 0px 0px 0px;
+    box-shadow: -3px -3px 25px #ccc
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.card-body {
+    padding: 50px;
+    h2 {
+        font-family: Titillium Bold;
+    }
+}
+
+.features {
+    // list-style-image: url('../img/dot.png');
+    list-style: none;
+}
+
+.padding-container {
+    padding: 200px 120px;
+    h2 {
+        font-family: Titillium Bold;
+    }
+
+}
+
+.dark-container {
+    background: #212121;
+    color: white;
+}
+
+.bg-1 {
+    @include fill-background('../img/web-04.png');
+}
+
+.bg-2 {
+    @include fill-background('../img/web-05.png');
+    background-position: bottom;
+}
+
+.schedule-title {
+    font-size: 32px;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    font-family: Titillium Bold;
+}
+
+.contact-container {
+    width: 70%;
+    margin: 0 auto;
+    .form-control {
+        padding-top: 15px;
+        padding-left: 35px;
+        padding-bottom: 15px;
+        color: black;
+        border-radius: 0;
+        &::placeholder {
+            color: black;
+        }
+    }
+    .special-control {
+        border: 1px solid black;
+    }
+}
+
+h4.section-title {
+    font-size: 32px;
+    font-family: Titillium Bold;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.social-media {
+
+}
+
+.black-btn {
+    background: black;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px 40px;
+    font-weight: 600;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+footer {
+    padding: 30px;
+    background: black;
+    text-align: center;
+    img {
+        height: 100px;
+        margin-bottom: 50px;
+    }
+    .social {
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+        margin: 0 auto;
+        img {
+            height: 30px
+        }
+    }
+}
