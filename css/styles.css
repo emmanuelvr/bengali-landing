@@ -24,9 +24,15 @@ html, body, * {
   background-size: cover;
   color: white; }
 
-.scrolled {
-  background: #403F48;
-  padding: 0px; }
+nav.scrolled ul.navbar-nav li.nav-item {
+  margin-right: 30px; }
+  nav.scrolled ul.navbar-nav li.nav-item a.nav-link {
+    font-family: Titillium Semibold;
+    color: black;
+    text-transform: uppercase; }
+    nav.scrolled ul.navbar-nav li.nav-item a.nav-link.active, nav.scrolled ul.navbar-nav li.nav-item a.nav-link:hover {
+      color: black;
+      border-bottom: 3px solid black; }
 
 ul.navbar-nav li.nav-item {
   margin-right: 30px; }
@@ -41,6 +47,9 @@ ul.navbar-nav li.nav-item {
 .100vh {
   height: 100vh; }
 
+.carousel-inner {
+  height: 100vh; }
+
 .full-section {
   background: url("../img/backgrounds/light-bg.png");
   background-size: cover;
@@ -48,7 +57,7 @@ ul.navbar-nav li.nav-item {
   background-position: center center; }
 
 .rounder {
-  border-radius: 15px 0px 0px 0px;
+  border-radius: 50px 0px 0px 0px;
   box-shadow: -3px -3px 25px #ccc; }
 
 .mt-6 {
@@ -84,14 +93,6 @@ ul.navbar-nav li.nav-item {
   background-position: center;
   background-position: bottom; }
 
-.schedule-title {
-  font-size: 32px;
-  position: absolute;
-  top: 5%;
-  left: 0;
-  right: 0;
-  font-family: Titillium Bold; }
-
 .contact-container {
   width: 70%;
   margin: 0 auto; }
@@ -102,7 +103,7 @@ ul.navbar-nav li.nav-item {
     color: black;
     border-radius: 0; }
     .contact-container .form-control::placeholder {
-      color: black; }
+      color: rgba(0, 0, 0, 0.5); }
   .contact-container .special-control {
     border: 1px solid black; }
 
@@ -128,13 +129,78 @@ footer {
   padding: 30px;
   background: black;
   text-align: center; }
+  footer ul.footer-menu {
+    width: 40%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    footer ul.footer-menu li {
+      display: inline-block; }
+    footer ul.footer-menu a {
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      font-size: 14px; }
   footer img {
-    height: 100px;
+    height: 150px;
     margin-bottom: 50px; }
+  footer small {
+    color: rgba(255, 255, 255, 0.8); }
+    footer small a {
+      color: rgba(255, 255, 255, 0.8); }
   footer .social {
     display: flex;
-    width: 20%;
+    width: 10%;
     justify-content: space-around;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 30px; }
     footer .social img {
-      height: 30px; }
+      height: 25px; }
+
+.schedule {
+  border-top: 1.5px solid black; }
+  .schedule img {
+    margin-top: 45px; }
+  .schedule .schedule-title {
+    font-size: 32px;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    font-family: Titillium Bold; }
+  .schedule .schedule-sub {
+    font-size: 22px; }
+
+.light-bg-2 {
+  background: url("../img/backgrounds/light-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.light-bg-3 {
+  background: url("../img/backgrounds/light-bg-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#membresia {
+  margin-top: 30px; }
+
+.label-black {
+  background: black;
+  font-weight: 600;
+  font-family: Titillium Bold;
+  padding: 5px 15px;
+  color: white;
+  font-size: 20px;
+  border: none; }
+
+.scrolled {
+  background: white;
+  padding: 0px; }
+
+.navbar-brand.scrolled img {
+  content: url("../img/logo-black.png"); }
+
+.navbar-brand img {
+  content: url("../img/logo-white.png"); }
