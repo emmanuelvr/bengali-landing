@@ -1,0 +1,215 @@
+@font-face {
+  font-family: Titillium;
+  src: url("../fonts/TitilliumWeb-Regular.ttf"); }
+
+@font-face {
+  font-family: Titillium Semibold;
+  src: url("../fonts/TitilliumWeb-SemiBold.ttf"); }
+
+@font-face {
+  font-family: Titillium Bold;
+  src: url("../fonts/TitilliumWeb-Bold.ttf"); }
+
+html, body, * {
+  font-family: Titillium; }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  background: url("../img/slider/image1.png");
+  background-size: cover;
+  color: white; }
+
+nav.scrolled ul.navbar-nav li.nav-item {
+  margin-right: 30px; }
+  nav.scrolled ul.navbar-nav li.nav-item a.nav-link {
+    font-family: Titillium Semibold;
+    color: black;
+    text-transform: uppercase; }
+    nav.scrolled ul.navbar-nav li.nav-item a.nav-link.active, nav.scrolled ul.navbar-nav li.nav-item a.nav-link:hover {
+      color: black;
+      border-bottom: 3px solid black; }
+
+ul.navbar-nav li.nav-item {
+  margin-right: 30px; }
+  ul.navbar-nav li.nav-item a.nav-link {
+    font-family: Titillium Semibold;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase; }
+    ul.navbar-nav li.nav-item a.nav-link.active, ul.navbar-nav li.nav-item a.nav-link:hover {
+      color: rgba(255, 255, 255, 0.8);
+      border-bottom: 3px solid white; }
+
+.100vh {
+  height: 100vh; }
+
+.carousel-inner {
+  height: 100vh; }
+
+.full-section {
+  background: url("../img/backgrounds/light-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.rounder {
+  border-radius: 50px 0px 0px 0px;
+  box-shadow: -3px -3px 25px #ccc; }
+
+.mt-6 {
+  margin-top: 6rem; }
+
+.card-body {
+  padding: 50px; }
+  .card-body h2 {
+    font-family: Titillium Bold; }
+
+.features {
+  list-style: none; }
+
+@media (min-width: 576px) {
+  .padding-container {
+    padding: 40px; } }
+
+@media (min-width: 992px) {
+  .padding-container {
+    padding: 200px 120px; } }
+
+.padding-container {
+  padding: 200px 120px; }
+  .padding-container h2 {
+    font-family: Titillium Bold; }
+
+.dark-container {
+  background: #212121;
+  color: white; }
+
+.bg-1 {
+  background: url("../img/web-04.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.bg-2 {
+  background: url("../img/web-05.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: bottom; }
+
+.contact-container {
+  width: 70%;
+  margin: 0 auto; }
+  .contact-container .form-control {
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    color: black;
+    border-radius: 0; }
+    .contact-container .form-control::placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+  .contact-container .special-control {
+    border: 1px solid black; }
+
+h4.section-title {
+  font-size: 32px;
+  font-family: Titillium Bold;
+  margin-top: 60px;
+  margin-bottom: 40px; }
+
+.black-btn {
+  background: black;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 15px 40px;
+  font-weight: 600; }
+
+#map {
+  height: 400px;
+  width: 100%; }
+
+footer {
+  padding: 30px;
+  background: black;
+  text-align: center; }
+  footer ul.footer-menu {
+    width: 40%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    footer ul.footer-menu li {
+      display: inline-block; }
+    footer ul.footer-menu a {
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      font-size: 14px; }
+  footer img {
+    height: 150px;
+    margin-bottom: 50px; }
+  footer small {
+    color: rgba(255, 255, 255, 0.8); }
+    footer small a {
+      color: rgba(255, 255, 255, 0.8); }
+  footer .social {
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 30px; }
+    footer .social img {
+      height: 25px; }
+
+.schedule {
+  border-top: 1.5px solid black; }
+  .schedule img {
+    margin-top: 45px; }
+  .schedule .schedule-title {
+    font-size: 32px;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    font-family: Titillium Bold; }
+  .schedule .schedule-sub {
+    font-size: 22px; }
+
+.light-bg-2 {
+  background: url("../img/backgrounds/light-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.light-bg-3 {
+  background: url("../img/backgrounds/light-bg-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#membresia {
+  margin-top: 30px; }
+
+.label-black {
+  background: black;
+  font-weight: 600;
+  font-family: Titillium Bold;
+  padding: 5px 15px;
+  color: white;
+  font-size: 20px;
+  border: none; }
+
+.scrolled {
+  background: white;
+  padding: 0px;
+  transition: .3s; }
+
+.navbar-brand.scrolled img {
+  content: url("../img/logo-black.png"); }
+
+.navbar-brand img {
+  content: url("../img/logo-white.png"); }

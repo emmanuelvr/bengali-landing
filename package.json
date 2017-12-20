@@ -12,10 +12,11 @@
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts && copyfiles fonts/* dist",
+    "copyfiles": "copyfiles css/* dist && copyfiles js/smooth-scroll.min.js dist",
     "copyphp": "copyfiles includes/* dist",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "imagemin": "imagemin img/* -o dist/img && imagemin img/backgrounds/* -o dist/img/backgrounds && imagemin img/slider/* -o dist/img/slider",
-    "build": "npm run clean && npm run copyfonts && npm run copyphp && npm run imagemin && npm run usemin"
+    "build": "npm run clean && npm run copyfonts && npm run copyfiles && npm run copyphp && npm run imagemin && npm run usemin"
   },
   "author": "Emmanuel Villalobos",
   "license": "ISC",
